@@ -10,7 +10,7 @@
             padding: 0;
             height: 100vh;
             background-color: #1c1717;
-            background-image: url('./qinshi.png'); /* 设置背景图片 */
+            background-image: url('./image/qinshi.png'); /* 设置背景图片 */
             background-position: center; /* 将图片置于中心 */
             background-repeat: no-repeat; /* 不重复图片 */
             background-size: 110% auto; /* 设置背景图片宽度为100% */
@@ -58,6 +58,17 @@
             left: 590px; /* 距离左边20px */
             font-size: 18px; /* 设置文字大小 */
             z-index: 100;
+            animation: fadeInText 5s ease-in-out; /* 应用文字淡入动画 */
+        }
+
+        .content2 {
+            position: absolute;
+            bottom: 30px; /* 距离底部30px */
+            right: 30px; /* 距离右边30px */
+            font-size: 22px; /* 设置文字大小 */
+            color: #ffffff;
+            z-index: 100;
+            text-align: right; /* 右对齐文字 */
             animation: fadeInText 5s ease-in-out; /* 应用文字淡入动画 */
         }
         h1 {
@@ -144,7 +155,7 @@
         }
         /* 链接基础样式 */
         a {
-            color: #17171c; /* 链接颜色 */
+            color: #ffffff; /* 链接颜色 */
             text-decoration: none; /* 去除下划线 */
             position: relative; /* 为绝对定位做准备 */
             transition: color 0.3s ease, box-shadow 0.3s ease; /* 平滑过渡颜色和阴影 */
@@ -215,12 +226,16 @@
 <a href="https://zikang-bi.github.io/" class="box" style="top:38%; left:59%;">
     <div class="box-text">  毕梓康</div>
 </a>
-<a href="https://Web_of_Nie.github.io/" class="box" style="top:58%; left:7%;">
+<a href="https://cloud107.github.io/" class="box" style="top:58%; left:7%;">
     <div class="box-text">  聂丰</div>
 </a>
 <a href="https://huanghaoran921.github.io/" class="box" style="top:75%; left:87%;">
     <div class="box-text">  黄浩然</div>
-</a><script>
+</a>
+<div class="content2">
+<a href="https://passing666.github.io/CS2405/"><<< 班级主页</a>
+</div>
+<br><script>
     const letters = document.querySelectorAll('.text-block span');
     let letterIndex = 0;
     function typeLetter() {
